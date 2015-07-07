@@ -27,12 +27,6 @@
 #error io430f6638.h file for use with ICC430/A430 only
 #endif
 
-#if __REGISTER_MODEL__ == __REGISTER_MODEL_REG20__
-#define __ACCESS_20BIT_REG__  void __data20 * volatile
-#else
-#define __ACCESS_20BIT_REG__  volatile unsigned short  /* only short access from C is allowed in small memory model */
-#endif
-
 
 #define __MSP430_HAS_MSP430XV2_CPU__  /* Definition to show that it has MSP430XV2 CPU */
 
